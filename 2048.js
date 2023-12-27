@@ -20,7 +20,6 @@ function setGame() {
 		}
 	}
 	setTwo();
-	setTwo();
 }
 
 function hasEmptyTile() {
