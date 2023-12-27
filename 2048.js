@@ -33,24 +33,24 @@ function hasEmptyTile() {
 }
 
 function setTwo() {
-    if (!hasEmptyTile()) {
-        return;
-    }
+  if (!hasEmptyTile()) {
+    return;
+  }
 
-    const found = false;
-    while (!found) {
-        //ramdom r, c
-        const r = Math.floor(Math.random() * rows);//0-1 * 4 -> 0, 3
-        const c = Math.floor(Math.random() * columns);
+  const found = false;
+  while (!found) {
+    //ramdom r, c
+    const r = Math.floor(Math.random() * rows);//0-1 * 4 -> 0, 3
+    const c = Math.floor(Math.random() * columns);
 
-        if (board[r][c] == 0) {
-            board[r][c] = 2;
-            const tile = document.getElementById(r.toString() + "-" + c.toString());
-            tile.innerText = "2";
-            tile.classList.add("x2");
-            found = true;
-        }
+    if (board[r][c] == 0) {
+      board[r][c] = 2;
+      const tile = document.getElementById(r.toString() + "-" + c.toString());
+      tile.innerText = "2";
+      tile.classList.add("x2");
+      found = true;
     }
+  }
 }
 
 function updateTile(tile, num) {
