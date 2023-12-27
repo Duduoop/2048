@@ -4,28 +4,27 @@ const rows = 4;
 const columns = 4;
 
 window.onload = function() {
-    setGame();
+	setGame();
 }
 
 function setGame() {
-    board = [ [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0]
-    ];
-
-    for (const r = 0; r < rows; r++) {
-        for (const c = 0; c < columns; c++) {
-            //<div id="0-0"></div>
-            const tile = document.createElement("div");
-            tile.id = r.toString() + "-" + c.toString();
-            const num = board[r][c];
-            updateTile(tile, num);
-            document.getElementById("board").append(tile);
-        }
-    }
-    setTwo();
-    setTwo();
+	board = [ [0,0,0,0],
+			 [0,0,0,0],
+			 [0,0,0,0],
+			 [0,0,0,0]
+			];
+	for (const r = 0; r < rows; r++) {
+		for (const c = 0; c < columns; c++) {
+			//<div id="0-0"></div>
+			const tile = document.createElement("div");
+			tile.id = r.toString() + "-" + c.toString();
+			const num = board[r][c];
+			updateTile(tile, num);
+			document.getElementById("board").append(tile);
+		}
+	}
+	setTwo();
+	setTwo();
 }
 
 function hasEmptyTile() {
