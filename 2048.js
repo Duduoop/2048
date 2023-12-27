@@ -1,8 +1,11 @@
 
-let board;
-let score = 0;
-let rows = 4;
-let columns = 4;
+const board;
+const score = 0;
+const rows = 4;
+const columns = 4;
+
+const r : rows;
+const c : collumns;
 
 window.onload = function() {
     setGame();
