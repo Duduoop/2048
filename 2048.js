@@ -1,4 +1,3 @@
-
 const board;
 const score = 0;
 const rows = 4;
@@ -9,20 +8,11 @@ window.onload = function() {
 }
 
 function setGame() {
-   board = [
-            [0,0,0,0],
-            [0,0,0,0],
-            [0,0,0,0],
-            [0,0,0,0]
-    ]
-
-  //board = [
-   //[2,2,2,2],
-    //[2,2,2,2],
-    //[4,4,8,8],
-  //  [4,4,8,8]
-//]
-
+    board = [ [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
+    ];
 
     for (const r = 0; r < rows; r++) {
         for (const c = 0; c < columns; c++) {
