@@ -1,8 +1,8 @@
 
-var board;
-var score = 0;
-var rows = 4;
-var columns = 4;
+let board;
+let score = 0;
+let rows = 4;
+let columns = 4;
 
 window.onload = function() {
     setGame();
