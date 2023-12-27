@@ -5,10 +5,10 @@ const columns = 4;
 
 window.onload = function() {
 	setGame();
-}
+};
 
 function setGame() {
-	board = [ [0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0]];
+	board = [[0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0]];
 	for (const r = 0; r < rows; r++) {
 		for (const c = 0; c < columns; c++) {
 			//<div id="0-0"></div>
